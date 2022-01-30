@@ -1,0 +1,479 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>store</title>
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--font-awesome-->
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--swiper link-->
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <!--jquery-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="notification">
+<h1>was added in cart !</h1>
+</div>
+<div id="notification-2">
+<h1>added in cart !</h1>
+</div>
+
+<!--Make Website-->
+<main>
+    <!--Make scrollTop-->
+    <section class="scrollT fa fa-angle-up">
+    </section>
+    <!--End Make scrollTop-->
+
+    <!--button for menu ////none-->
+    <section class="click" style="display: none;">
+        <div>
+            <img src="icons/icons8-menu-48.png" alt="">
+        </div>
+        <div>
+            <img src="icons/HYAPE.png" alt="WebIcon">
+        </div>
+    </section>
+    <!--end button for menu ////none-->
+
+    <!--Make header-->
+    <header>
+        <!--make menu-1-->
+        <section style="display: none" class="close">
+            <div class="cart-click" style="display: none">
+                <img src="icons/icons8-search-24.png" alt="">
+                <h1 class="main-price">CART-$0</h1>
+                <img src="icons/cart.png" alt="">
+            </div>
+            <h1>menu</h1>
+            <i class="fa fa-times"></i>
+        </section>
+        <section class="menu-1">
+            <section class="topMenu">
+                <div>
+                    <img src="icons/.png" alt="test">
+                </div>
+                <div>123-123456789</div>
+                <div>
+                    <img src="icons/letter.png" alt="test">
+                </div>
+                <div>info@info.com</div>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#">
+                        <i class="fa fa-lock"></i>
+                        Login/Register
+                    </a></li>
+                    <li><a href="#">Checkout</a></li>
+                    <li id="cart-1"><a href="#">Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">My Account</a></li>
+                </ul>
+            </nav>
+        </section>
+        <!--end make menu-1-->
+        <!--make menu-2-->
+        <section class="menu-2">
+            <div>
+                <img src="icons/HYAPE.png" alt="WebIcon">
+            </div>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a data-id="#about" href="#" onclick="About()">ABOUT US</a></li>
+                        <li><a href="#">PAGE</a></li>
+                        <li><a data-id="#shop" onclick="Shop()" href="#">SHOP</a></li>
+                        <li><a onclick="Blog()" href="#">BLOG</a></li>
+                        <li><a onclick="Contact()" href="#">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cart-click">
+                <img src="icons/icons8-search-24.png" alt="">
+                <h1 class="main-price">CART-$0<i id="pp"></i></h1>
+                <img src="icons/cart.png" alt="">
+            </div>
+        </section>
+        <!--end make menu-2-->
+    </header>
+    <!--End Make header-->
+
+    <!--Make Slider-->
+    <section class="slider">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/Group%203.png" alt="test">
+                    <section class="cover-slider-1">
+                        <h1>DRESSES <i>ARE</i> GOOD</h1>
+                        <h1>BUT OUR DRESSES ARE <i>BEST</i></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad alias beatae
+                            consequatur consequuntur cum delectus doloremque error eum impedit</p>
+                    </section>
+                </div>
+                <div class="swiper-slide" style="font-family: 'Comic Sans MS';font-size: 50px">
+                    img-2
+                </div>
+                <div class="swiper-slide" style="font-family: 'Comic Sans MS';font-size: 50px">
+                    img-3
+                </div>
+                <div class="swiper-slide" style="font-family: 'Comic Sans MS';font-size: 50px">
+                    img-4
+                </div>
+                <div class="swiper-slide" style="font-family: 'Comic Sans MS';font-size: 50px">
+                    img-5
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--End Make Slider-->
+
+    <!--Make About Us-->
+    <section class="aboutUs" id="about">
+        <section>
+            <h1>ABOUT<i>US</i></h1>
+        </section>
+        <section>
+            <div>
+                <div>
+                    <img src="icons/setting.png" alt="test">
+                    <h1>SETTING</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci asperiores assumenda aut
+                        blanditiis facilis laudantium nam perferendis repellendus, similique, tenetur unde! Dicta
+                        doloribus ex facere fugit in incidunt magnam</p>
+                </div>
+                <div>
+                    <img src="icons/money%20back.png" alt="test">
+                    <h1>MONEY BACK</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci asperiores assumenda aut
+                        blanditiis facilis laudantium nam perferendis repellendus, similique, tenetur unde! Dicta
+                        doloribus ex facere fugit in incidunt magnam</p>
+                </div>
+                <div>
+                    <img src="icons/worldwide%20shipping.png" alt="test">
+                    <h1>WORLDWIDE SHIPPING</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci asperiores assumenda aut
+                        blanditiis facilis laudantium nam perferendis repellendus, similique, tenetur unde! Dicta
+                        doloribus ex facere fugit in incidunt magnam</p>
+                </div>
+                <div>
+                    <img src="icons/worldwide%20shipping-2.png" alt="test">
+                    <h1>WORLDWIDE SHIPPING</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci asperiores assumenda aut
+                        blanditiis facilis laudantium nam perferendis repellendus, similique, tenetur unde! Dicta
+                        doloribus ex facere fugit in incidunt magnam</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--End Make About Us-->
+
+    <!--Make Products-->
+    <section class="bu-2" id="shop">
+        <section>
+            <h1><i>NEW</i>&ensp;&ensp;COLLECTION</h1>
+        </section>
+        <section>
+            <section>
+                <section class="First-img"></section>
+                <div>
+                    <div>
+                        <img class="like" src="icons/BUTTON%204.png" alt="t">
+                        <img src="icons/BUTTON%20copy%203.png" alt="t">
+                        <img src="icons/BUTTON%20copy%202.png" alt="t">
+                    </div>
+                    <div class="by"><img src="icons/2.png" alt="t">
+                        <h1>ADD TO CART</h1>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="item-name">BLACK SHOES</h1>
+                    <h1 class="item-shop-price">$26</h1>
+                </div>
+            </section>
+            <section>
+                <section class="Second-img"></section>
+                <div>
+                    <div>
+                        <img class="like" src="icons/BUTTON%204.png" alt="t">
+                        <img src="icons/BUTTON%20copy%203.png" alt="t">
+                        <img src="icons/BUTTON%20copy%202.png" alt="t">
+                    </div>
+                    <div class="by"><img src="icons/2.png" alt="t">
+                        <h1>ADD TO CART</h1>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="item-name">YELLOW SHOES</h1>
+                    <h1 class="item-shop-price">$31</h1>
+                </div>
+            </section>
+            <section>
+                <section class="Third-img"></section>
+                <div>
+                    <div>
+                        <img class="like" src="icons/BUTTON%204.png" alt="t">
+                        <img src="icons/BUTTON%20copy%203.png" alt="t">
+                        <img src="icons/BUTTON%20copy%202.png" alt="t">
+                    </div>
+                    <div class="by"><img src="icons/2.png" alt="t">
+                        <h1>ADD TO CART</h1>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="item-name">PINK SHOES</h1>
+                    <h1 class="item-shop-price">$21</h1>
+                </div>
+            </section>
+            <section>
+                <section class="last-img"></section>
+                <div>
+                    <div>
+                        <img class="like" src="icons/BUTTON%204.png" alt="t">
+                        <img src="icons/BUTTON%20copy%203.png" alt="t">
+                        <img src="icons/BUTTON%20copy%202.png" alt="t">
+                    </div>
+                    <div class="by">
+                        <img src="icons/2.png" alt="t">
+                        <h1>ADD TO CART</h1>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="item-name">GRAY SHOES</h1>
+                    <h1 class="item-shop-price">$56</h1>
+                </div>
+            </section>
+        </section>
+    </section>
+    <!--End Make Products-->
+
+    <!--Make Discount-->
+    <section class="discount">
+        <h1>SALE UPTO 40% OFF</h1>
+        <h1>Dont Forget to Buy</h1>
+    </section>
+    <!--End Make Discount-->
+
+    <!--Make Products -->
+    <article class="product">
+        <figure>
+            <section>
+                <h1><i>OUR</i>&ensp;PRODUCTS</h1>
+            </section>
+            <section>
+                <section>
+                    <p class="first-img"><img src="images/T-1.jpg" alt="images"></p>
+                    <div>
+                        <div>
+                            <img class="like" src="icons/BUTTON%204.png" alt="t">
+                            <img src="icons/BUTTON%20copy%203.png" alt="t">
+                            <img src="icons/BUTTON%20copy%202.png" alt="t">
+                        </div>
+                        <div class="by"><img src="icons/2.png" alt="t">
+                            <h1>ADD TO CART</h1>
+                        </div>
+                    </div>
+                    <section>SALE</section>
+                    <div>
+                        <h1 class="item-name">BLACK&nbsp;T-SHIRT</h1>
+                        <h1 class="item-shop-price">$26.99</h1>
+                    </div>
+                </section>
+                <section>
+                    <p class="second-img"><img src="images/H-1.jpg" alt="images"></p>
+                    <div>
+                        <div>
+                            <img class="like" src="icons/BUTTON%204.png" alt="t">
+                            <img src="icons/BUTTON%20copy%203.png" alt="t">
+                            <img src="icons/BUTTON%20copy%202.png" alt="t">
+                        </div>
+                        <div class="by"><img src="icons/2.png" alt="t">
+                            <h1>ADD TO CART</h1>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="item-name">HOODIE</h1>
+                        <h1 class="item-shop-price">$31.99</h1>
+                    </div>
+                </section>
+                <section>
+                    <p class="third-img"><img src="images/T-2.jpg" alt="images"></p>
+                    <div>
+                        <div>
+                            <img class="like" src="icons/BUTTON%204.png" alt="t">
+                            <img src="icons/BUTTON%20copy%203.png" alt="t">
+                            <img src="icons/BUTTON%20copy%202.png" alt="t">
+                        </div>
+                        <div class="by"><img src="icons/2.png" alt="t">
+                            <h1>ADD TO CART</h1>
+                        </div>
+                    </div>
+                    <section>NEW</section>
+                    <div>
+                        <h1 class="item-name">YELLOW&nbsp;T-SHIRT</h1>
+                        <h1 class="item-shop-price">$21.99</h1>
+                    </div>
+                </section>
+            </section>
+        </figure>
+    </article>
+    <!--end Make Products-->
+
+    <!--Make Customers Review-->
+    <section class="Customers-Review" id="contact">
+        <section>
+            <h1>CUSTOMER`S&ensp;<i>REVIEW</i></h1>
+        </section>
+        <section>
+            <div>
+                <div></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae cupiditate dicta excepturi
+                    incidunt, nesciunt quam recusandae repudiandae sequi vel. Corporis deleniti dolor doloremque
+                    explicabo laborum molestias omnis praesentium rerum!</p>
+                <h1>-&ensp;JOHN&ensp;-</h1>
+                <h1>khi,PAK</h1>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div>
+                <div></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae cupiditate dicta excepturi
+                    incidunt, nesciunt quam recusandae repudiandae sequi vel. Corporis deleniti dolor doloremque
+                    explicabo laborum molestias omnis praesentium rerum!</p>
+                <h1>-&ensp;JOHN&ensp;-</h1>
+                <h1>khi,PAK</h1>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div>
+                <div></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae cupiditate dicta excepturi
+                    incidunt, nesciunt quam recusandae repudiandae sequi vel. Corporis deleniti dolor doloremque
+                    explicabo laborum molestias omnis praesentium rerum!</p>
+                <h1>-&ensp;JOHN&ensp;-</h1>
+                <h1>khi,PAK</h1>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--End Make Customers Review-->
+
+    <!--Make order-->
+    <section class="order">
+        <section>
+            <h1>PLACE&ensp;YOUR&ensp;<i>ORDER</i>&ensp;NOW</h1>
+        </section>
+        <section class="form">
+            <section id="notification-by">
+                <h1>! Your order has been registered</h1>
+            </section>
+            <div>
+                <input type="email" id="input-1" placeholder="Enter your email here" required>
+                <i class="fa fa-check e-check"></i>
+                <i class="fa fa-times e-times"></i>
+            </div>
+            <div>
+                <input type="text" id="input-2 " placeholder="Your order here" required>
+                <i class="fa fa-check o-check"></i>
+                <i class="fa fa-times o-times"></i>
+            </div>
+
+            <button id="submit">order now</button>
+        </section>
+        <section id="blog">
+            <h1>IMPROVE&ensp;YOUR&ensp;DRESSING</h1>
+            <p>REAL-TIME FEEDBACK.REAL-TIME RESULTS</p>
+        </section>
+    </section>
+    <!--End Make order-->
+
+    <!--Make send-->
+    <footer>
+        <section>
+            <p><img src="icons/HYAPE.png" alt="t"></p>
+            <p>Lorem ipsum dolor sit amet, consectetuer</p>
+            <p>adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean
+                massa. Cum sociis nat
+                oque penatibus et magnis dis pa</p>
+            <div>
+                <img src="icons/Facebook%20Logo.png" alt="t">
+                <img src="icons/p.png" alt="t">
+                <img src="icons/Twitter%20Logo.png" alt="t">
+                <img src="icons/Vimeo%20Icon.png" alt="t">
+                <img src="icons/icon.png" alt="t">
+                <img src="icons/Google%20+.png" alt="t">
+            </div>
+        </section>
+        <section>
+            <div>
+                <input type="text" placeholder="Your Name" id="chek">
+                <input type="email" placeholder="Your Email" id="chekBox" required>
+            </div>
+            <div>
+                <textarea placeholder="Your Message ..." name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <button id="second">send</button>
+            </div>
+        </section>
+    </footer>
+    <!--End Make send-->
+
+    <!--Make footer-->
+    <section class="footer">
+        <h1>All Rights Reserved © </h1>
+    </section>
+    <!--End make footer-->
+
+    <!--Make cart-->
+    <section class="cart">
+        <div class="fa fa-times"></div>
+        <div class="main-product-cart">
+            <div class="dashboard">
+                <h1>product</h1>
+                <h1>price</h1>
+                <h1 class="main-price">$0</h1>
+            </div>
+        </div>
+    </section>
+    <!--End Make cart-->
+
+
+</main>
+<!--End make website-->
+<!--swiper-->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!--js-->
+<script src="js/main.js" async></script>
+
+</body>
+</html>

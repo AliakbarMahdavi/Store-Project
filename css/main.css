@@ -1,0 +1,99 @@
+@import "Extra large screens.css";
+@import "Desktops.css";
+@import "laptops.css";
+@import "iPads.css";
+@import "Mobile devices.css";
+@import "animates.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+section.scrollT {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    left: 20px;
+    bottom: 10px;
+    display: none;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 45%;
+    padding-bottom: 55px;
+    color: white;
+    cursor: pointer;
+}
+
+section#notification-by {
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+section#notification-by > h1 {
+    color: limegreen;
+    font-family: "Microsoft YaHei";
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.First-img {
+    width: 90%;
+    height: 200px;
+    background: url("../images/8233b586ff3c3f447cf52091f572d1230ccfdf95_1631776256.jpg") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+.Second-img {
+    width: 90%;
+    height: 200px;
+    background: url("../images/2.jpg") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 40px;
+    left: 5px;
+}
+
+.Third-img {
+    width: 90%;
+    height: 200px;
+    background: url("../images/3.jpg") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+}
+
+.last-img {
+    width: 90%;
+    height: 200px;
+    background: url("../images/4.jpg") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+}
+
+.first-img > img, .third-img > img, .second-img > img {
+    width: 90%;
+    height: 400px;
+    position: absolute;
+    top: 40px;
+    left: calc(50% - 45%);
+}
+
+.second-img > img {
+    width: 100% !important;
+    left: calc(50% - 50%) !important;
+}
+
